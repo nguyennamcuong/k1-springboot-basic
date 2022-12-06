@@ -1,6 +1,11 @@
 package com.nbstech.spring.basic.movierecommendersystem.Lession1;
 
+import com.nbstech.spring.basic.movierecommendersystem.Lession2.CollaborativeFilter;
+
 public class Movierecommender {
+
+    public Movierecommender(CollaborativeFilter collaborativeFilter) {
+    }
 
     public String [] recommendMovies (String movie) {
 

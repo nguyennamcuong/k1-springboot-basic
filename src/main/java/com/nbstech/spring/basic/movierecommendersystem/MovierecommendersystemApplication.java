@@ -1,6 +1,8 @@
 package com.nbstech.spring.basic.movierecommendersystem;
 
-import com.nbstech.spring.basic.movierecommendersystem.Lession1.Movierecommender;
+import com.nbstech.spring.basic.movierecommendersystem.Lession2.CollaborativeFilter;
+import com.nbstech.spring.basic.movierecommendersystem.Lession2.ContentBasedFilter;
+import com.nbstech.spring.basic.movierecommendersystem.Lession2.Movierecommender;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,8 +15,9 @@ public class MovierecommendersystemApplication {
 //SpringApplication.run(MovieRecommenderSystemApplication.class, args);
 
 		//create object of RecommenderImplementation class
-		Movierecommender recommender = new Movierecommender();
-
+		//Movierecommender recommender = new Movierecommender();
+		Movierecommender recommender = new Movierecommender(new ContentBasedFilter());
+		//Movierecommender recommender = new Movierecommender(new CollaborativeFilter());
 		//call method to get recommendations
 		String[] result = recommender.recommendMovies("Finding Dory");
 

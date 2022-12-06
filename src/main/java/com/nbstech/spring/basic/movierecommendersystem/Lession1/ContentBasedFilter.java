@@ -1,6 +1,8 @@
 package com.nbstech.spring.basic.movierecommendersystem.Lession1;
 
-public class ContentBasedFilter {
+import com.nbstech.spring.basic.movierecommendersystem.Lession2.CollaborativeFilter;
+
+public class ContentBasedFilter extends CollaborativeFilter {
 
     public String[] getRecommendations(String movie) {
 

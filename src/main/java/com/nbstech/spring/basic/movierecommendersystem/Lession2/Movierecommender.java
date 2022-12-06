@@ -1,13 +1,18 @@
-package com.nbstech.spring.basic.movierecommendersystem.Lession1;
+package com.nbstech.spring.basic.movierecommendersystem.Lession2;
 
 public class Movierecommender {
+
+    MovieFilter movieFilter;
+
+    public Movierecommender(MovieFilter movieFilter) {
+        this.movieFilter = movieFilter;
+    }
 
     public String [] recommendMovies (String movie) {
 
         //use content based filter to find similar movies
 
-        ContentBasedFilter filter = new ContentBasedFilter();
-        String[] results = filter.getRecommendations("Finding Dory");
+        String[] results = movieFilter.getRecommendations("Finding Dory");
 
         //return the results
         //return new String[] {"M1", "M2", "M3"};
