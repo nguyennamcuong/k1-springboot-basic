@@ -1,4 +1,4 @@
-package com.nbstech.spring.basic.movierecommendersystem.Lession2;
+package com.nbstech.spring.basic.movierecommendersystem.Lession3;
 
 public class ContentBasedFilter  implements MovieFilter {
 
