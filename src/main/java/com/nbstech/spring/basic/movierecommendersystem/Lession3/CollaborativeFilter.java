@@ -1,9 +1,11 @@
 package com.nbstech.spring.basic.movierecommendersystem.Lession3;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
+@Qualifier("cuong")
 @Component
 public class CollaborativeFilter implements MovieFilter {
+
     @Override
     public String[] getRecommendations(String movie) {
 
